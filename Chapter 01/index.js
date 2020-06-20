@@ -150,3 +150,38 @@ console.log("\u{1F600}"); // Smiley face
 
 // However, you probably meant:
 // return true;
+
+// This means that you must not insert a line break between return, break, or continue
+// and the expression that follows the keyword. If you do insert a line break, your code
+// is likely to fail in a nonobvious way that is difficult to debug.
+
+// The second exception involves the ++ and −− operators (§4.8). These operators can be
+// prefix operators that appear before an expression or postfix operators that appear
+// after an expression. If you want to use either of these operators as postfix operators,
+// they must appear on the same line as the expression they apply to. The third exception
+// involves functions defined using concise “arrow” syntax: the => arrow itself must
+// appear on the same line as the parameter list.
+
+// The JavaScript interpreter performs automatic garbage collection for memory management.
+// This means that a JavaScript programmer generally does not need to worry
+// about destruction or deallocation of objects or other values. When a value is no
+// longer reachable—when a program no longer has any way to refer to it—the interpreter
+// knows it can never be used again and automatically reclaims the memory it
+// was occupying.
+
+// (JavaScript programmers do sometimes need to take care to ensure
+// that values do not inadvertently remain reachable—and therefore nonreclaimable—
+// longer than necessary.)
+
+// JavaScript supports an object-oriented programming style. Loosely, this means that
+// rather than having globally defined functions to operate on values of various types,
+// the types themselves define methods for working with values. To sort the elements of
+// an array a, for example, we don’t pass a to a sort() function. Instead, we invoke the
+// sort() method of a:
+
+// a.sort(); // The object-oriented version of sort(a).
+
+// Method definition is covered in Chapter 9. Technically, it is only JavaScript objects
+// that have methods. But numbers, strings, boolean, and symbol values behave as if
+// they have methods. In JavaScript, null and undefined are the only values that methods
+// cannot be invoked on.
