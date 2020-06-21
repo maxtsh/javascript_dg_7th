@@ -1,3 +1,3 @@
-JavaScript The Definitive Guide 7th Edition.
+JavaScript The Definitive Guide 7th Edition Exercises.
 
 ![](Cover.png)
